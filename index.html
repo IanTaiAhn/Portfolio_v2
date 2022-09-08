@@ -10,15 +10,15 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="bg-slate-400" >
-    <nav class = "bg-slate-600 pt-6 pb-6 font-mono font-bold text-lg shadow shadow-gray-500 md:flex md:items-center md:justify-between">
+    <nav class = "bg-slate-600 pt-6 pb-6 font-mono font-bold text-xl shadow shadow-gray-500 md:flex md:items-center md:justify-between">
         <div class = "flex justify-between items-center">
-            <h1 class="text-4xl mr-20 ml-2">Nav</h1>
+            <h1 class="text-4xl mr-20 ml-8">Nav</h1>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
-            <ul class = "md:flex md:items-center z-[-1] md:z-auto md:static bg-slate-600 absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-2 top-[-400px] transition-all ease-in duration-500">
+            <ul class = "flex flex-col md:flex md:items-center md:flex-row z-[-1] md:z-auto md:static bg-slate-600 absolute h-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-2 top-[-800px] transition-all ease-in duration-500">
                 <li class="mx-2 sm:mx-8 hover:text-teal-400">
                     <a href="#">Home</a>
                 </li>
@@ -38,7 +38,7 @@
     <script>
         function Menu(e){
           let list = document.querySelector('ul');
-          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.add('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'))
         }
       </script>
 
