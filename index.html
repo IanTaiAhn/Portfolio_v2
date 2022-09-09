@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="bg-slate-400" >
+<body class="bg-slate-400 scroll-smooth" >
+  
     <nav class = "bg-slate-600 pt-6 pb-6 font-mono font-bold text-xl shadow shadow-gray-500 md:flex md:items-center md:justify-between">
         <div class = "flex justify-between items-center">
-            <h1 class="text-4xl mr-20 ml-8">Nav</h1>
+            <h1 class="text-3xl ml-8 ">Ian Tai Ahn</h1>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
                 <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
-            <ul class = "flex flex-col md:flex md:items-center md:flex-row z-[-1] md:z-auto md:static bg-slate-600 absolute h-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-2 top-[-800px] transition-all ease-in duration-500">
+            <ul class = "flex flex-col md:flex md:items-center md:flex-row z-[-1] md:z-auto md:static bg-slate-600 absolute h-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-2 top-[-1000px] transition-all ease-in duration-500">
                 <li class="mx-2 sm:mx-8 hover:text-teal-400">
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="mx-2 sm:mx-8 hover:text-teal-400">
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class="mx-2 sm:mx-8 hover:text-teal-400">
-                    <a href="#">Work</a>
+                    <a href="#projects">Projects</a>
                 </li>
-                <li class="mx-2 sm:mx-8 hover:text-teal-400">
-                    <a href="#">Contact</a>
+                <li class="mx-2 pr-6 sm:mx-8 hover:text-teal-400">
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
 
@@ -41,6 +42,18 @@
           e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.add('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'))
         }
       </script>
+
+      <section class="font-mono text-xl h-screen ">
+        <div class="container w-1/2 h-1/2 mx-auto flex flex-row justify-center items-center">
+          <h1 class="text-4xl ">Hi, I'm Ian Tai Ahn</h1>
+        </div>
+      </section>
+
+      <section id="about" class="font-mono text-xl h-screen ">
+        <div class="container mx-auto flex flex-row justify-center ">
+          <h1>About Me</h1>
+        </div>
+      </section>
 
     <!-- <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center ">
@@ -78,38 +91,6 @@
     <h2 class=""></h2>
         </ul>
       </nav> -->
-
-
-    
-<!-- 
-<nav class="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
-	<div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
-		<div class="text-indigo-500 md:order-1">
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
-				stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-					d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-			</svg>
-		</div>
-		<div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
-			<ul class="flex font-semibold justify-between">
-				<li class="md:px-4 md:py-2 text-indigo-500"><a href="#">Dashboard</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Search</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Explore</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">About</a></li>
-				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Contact</a></li>
-			</ul>
-		</div>
-		<div class="order-2 md:order-3">
-			<button class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-                <span>Login</span>
-            </button>
-		</div>
-	</div>
-</nav> -->
 
 </body>
 </html>
