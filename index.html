@@ -10,7 +10,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="bg-slate-400 scroll-smooth" >
-  
+
     <nav class = "bg-slate-600 pt-6 pb-6 font-mono font-bold text-xl shadow shadow-gray-500 md:flex md:items-center md:justify-between">
         <div class = "flex justify-between items-center">
             <h1 class="text-3xl ml-8 ">Ian Tai Ahn</h1>
@@ -19,7 +19,7 @@
             </span>
         </div>
 
-            <ul class = "flex flex-col md:flex md:items-center md:flex-row z-[-1] md:z-auto md:static bg-slate-600 absolute h-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-2 top-[-1000px] transition-all ease-in duration-500">
+            <ul class = "flex flex-col md:flex md:items-center md:flex-row z-[1] md:z-auto md:static bg-slate-600 absolute h-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-2 top-[-1000px] transition-all ease-in duration-500">
                 <li class="mx-2 sm:mx-8 hover:text-teal-400">
                     <a href="index.html">Home</a>
                 </li>
@@ -36,16 +36,11 @@
 
     </nav>
 
-    <script>
-        function Menu(e){
-          let list = document.querySelector('ul');
-          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.add('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'))
-        }
-      </script>
 
       <section class="font-mono text-xl h-screen ">
-        <div class="container w-1/2 h-1/2 mx-auto flex flex-row justify-center items-center">
-          <h1 class="text-4xl ">Hi, I'm Ian Tai Ahn</h1>
+        <div class="container w-1/2 h-1/2 mx-auto text-center sm:mt-20 mt-10">
+          <h1 class="text-2xl sm:text-4xl">Hi, I'm Ian Tai Ahn</h1>
+          <p class="text-center pt-5 sm:text-xl text-lg"> Full-time worker, full-time student, big aspirations, and knows how to take care of themselves.</p>
         </div>
       </section>
 
@@ -55,6 +50,14 @@
         </div>
       </section>
 
+      <script>
+        function Menu(e){
+          let list = document.querySelector('ul');
+          // let sec1 = document.querySelector('section');
+          // let body = document.querySelector('body');
+          e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100'), list.classList.add('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'));
+        }
+      </script>
     <!-- <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center ">
           <span class="text-2xl font-[Poppins] cursor-pointer">
