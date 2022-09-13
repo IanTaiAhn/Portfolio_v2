@@ -51,7 +51,7 @@
       <section id="about" class="font-mono text-xl h-screen pt-20">
         <div class="container mx-auto text-center sm:mt-52 mt-10">
           <h1 class="text-3xl sm:text-5xl sm:mb-8">About Me</h1>
-          <p class="text-center  sm:text-xl text-lg mb-5 mt-5">Who I am, what I've done, and where I'm headed.</p>
+          <p class="text-center sm:text-xl text-lg mb-5 mt-5">Who I am, what I've done, and where I'm headed.</p>
               <div class="md:flex md:flex-row md:justify-around">
                 <div class="md:w-1/2">
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8">More on me</h1>
@@ -68,15 +68,48 @@
         </div>
       </section>
 
-      <section id="projects" class="font-mono text-xl h-screen pt-20 mt-20 ">
-        <div class="conatainer mx-auto text-center sm:mt-52 mt-20">
+      <section id="projects" class="font-mono text-xl h-screen pt-20 mt-20 mb-52">
+        <div class="conatainer mx-auto text-center sm:mt-20 mt-20">
           <h1 class="text-3xl sm:text-5xl sm:mb-8">Projects</h1>
           <p class="text-center sm:text-xl text-lg mb-5 mt-5">Backend, frontend, and SQL projects I've done.</p>
+          <!-- project 1 start -->
+            <div class="md:flex md:flex-row md:justify-around">
+              <div class="md:w-1/2">
+                <img class="object-contain h-3/4 w-48 float-right" src="img/project1/project1_launch.PNG">
+              </div>
+              <div class="md:w-1/2">
+                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Skydiving Helper</h1>
+                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This application allows the user to check the the dropzone in Erda, and gauge the wind conditions. </p>
+              </div>
+            </div>
+              <!-- project 2 start -->
+            <div class="md:flex md:flex-row md:justify-around">
+              <div class="md:w-1/2">
+                <img class="object-contain h-full w-3/4 float-right" src="img/project2/project_2_nestedcursor.png">
+              </div>
+              <div class="md:w-1/2">
+                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Live Music Database</h1>
+                <!-- Add a proficiency thing maybe -->
+                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This database is meant to help schedule events for live music, providing functionality for tickets, artists, payments, and more. </p>
+              </div>
+            </div>
+            <!-- project 3 start -->
+            <div class="md:flex md:flex-row md:justify-around">
+              <div class="md:w-1/2">
+                <img class="object-cover h-full w-3/4 float-right" src="img/project3/project_3_game.png">
+              </div>
+              <div class="md:w-1/2">
+                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Mycelium Mash</h1>
+                <!-- Add a proficiency thing maybe -->
+                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This is a game I created using Phaser, the HTML5 game engine. I created the music, and put the game together, my sister drew the sprites </p>
+              </div>
+            </div>
+
         </div>
 
       </section>
 
-      <section id="contact" class="font-mono text-xl h-screen pt-20 mt-20 ">
+      <section id="contact" class="font-mono text-xl h-screen pt-96 mt-96 ">
         <div class="conatainer mx-auto text-center sm:mt-52 mt-20">
           <h1 class="text-3xl sm:text-5xl sm:mb-8">Contact Me</h1>
           <!-- <p class="text-center sm:text-xl text-lg mb-5 mt-5">Backend, frontend, and SQL projects I've done.</p>s -->
@@ -118,6 +151,7 @@
           e.name === 'menu' ? (e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'));
         }
       </script>
+
     <!-- <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center ">
           <span class="text-2xl font-[Poppins] cursor-pointer">
