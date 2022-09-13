@@ -11,7 +11,7 @@
 </head>
 <body class="bg-slate-400 scroll-smooth " >
     <!-- <header> -->
-    <nav class = "text-white bg-slate-600 pt-6 pb-6 font-mono font-bold text-xl z-[3] shadow shadow-gray-500 md:flex md:items-center md:justify-between sticky top-0">
+    <nav class = "text-white bg-slate-600 pt-6 pb-6 font-mono font-bold text-xl z-[3] shadow shadow-black md:flex md:items-center md:justify-between sticky top-0">
         <div class = "flex justify-between items-center z-[2]">
             <h1 class="text-3xl ml-8 ">Ian Tai Ahn</h1>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -36,7 +36,7 @@
     </nav>
     <!-- </header> -->
 
-      <section class="font-mono text-xl pb-10">
+      <section class="font-mono text-xl pb-32 ">
         <div class="container mx-auto text-center sm:mt-52 mt-20">
             <div>
             <h1 class="text-3xl sm:text-5xl px-2 sm:mb-5">Hi, I'm Ian Tai Ahn</h1>
@@ -48,8 +48,8 @@
         </div>
       </section>
 
-      <section id="about" class="font-mono text-xl pt-20">
-        <div class="container mx-auto text-center sm:mt-52 mt-10">
+      <section id="about" class="font-mono text-xl pt-20 pb-10 ">
+        <div class="container mx-auto text-center sm:mt-20 mt-10">
           <h1 class="text-3xl sm:text-5xl sm:mb-8">About Me</h1>
           <p class="text-center sm:text-xl text-lg mb-5 mt-5">Who I am, what I've done, and where I'm headed.</p>
               <div class="md:flex md:flex-row md:justify-around">
@@ -69,9 +69,9 @@
       </section>
 
       <section id="projects" class="font-mono text-xl pt-10">
-        <div class="container mx-auto text-center sm:mt-52 mt-10">
+        <div class="container mx-auto text-center sm:mt-20 mt-10">
           <h1 class="text-3xl sm:text-5xl sm:mb-8">Projects</h1>
-          <p class="text-center sm:text-xl text-lg mb-28 mt-5">Backend, frontend, and SQL projects I've done.</p>
+          <p class="text-center sm:text-xl text-lg mb-16 mt-5">Backend, frontend, and SQL projects I've done.</p>
           <!-- project 1 start -->
             <div class="md:flex md:flex-row md:justify-around">
               <div class="md:w-1/2 pr-10">
@@ -80,10 +80,11 @@
               <div class="md:w-1/2 pl-10 pr-10">
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Skydiving Helper</h1>
                 <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This application allows the user to check the the dropzone in Erda, and gauge the wind conditions. </p>
+                <button class="float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600">Show Project</button>
               </div>
             </div>
               <!-- project 2 start -->
-            <div class="md:flex md:flex-row md:justify-around">
+            <div class="md:flex md:flex-row md:justify-around mt-2 ">
               <div class="md:w-1/2 pr-12">
                 <img class="object-contain h-full w-3/4 float-right" src="img/project2/project_2_nestedcursor.png">
               </div>
@@ -91,10 +92,12 @@
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Live Music Database</h1>
                 <!-- Add a proficiency thing maybe -->
                 <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This database is meant to help schedule events for live music, providing functionality for tickets, artists, payments, and more. </p>
+                <button class="float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600">Show Project</button>
+
               </div>
             </div>
             <!-- project 3 start -->
-            <div class="md:flex md:flex-row md:justify-around">
+            <div class="md:flex md:flex-row md:justify-around mt-10">
               <div class="md:w-1/2 pr-12">
                 <img class="object-cover h-full w-3/4 float-right" src="img/project3/project_3_game.png">
               </div>
@@ -102,51 +105,14 @@
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Mycelium Mash</h1>
                 <!-- Add a proficiency thing maybe -->
                 <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This is a game I created using Phaser, the HTML5 game engine. I created the music, and put the game together, my sister drew the sprites </p>
+                <button class="float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600">Show Project</button>
+
               </div>
             </div>
         </div>
       </section>
 
-      <!-- <section id="projects" class="font-mono text-xl h-screen pt-20 mt-20 mb-52">
-        <div class="conatainer mx-auto text-center sm:mt-20 mt-20">
-          <h1 class="text-3xl sm:text-5xl sm:mb-8">Projects</h1>
-          <p class="text-center sm:text-xl text-lg mb-5 mt-5">Backend, frontend, and SQL projects I've done.</p>
-          project 1 start
-            <div class="md:flex md:flex-row md:justify-around">
-              <div class="md:w-1/2">
-                <img class="object-contain h-3/4 w-48 float-right" src="img/project1/project1_launch.PNG">
-              </div>
-              <div class="md:w-1/2">
-                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Skydiving Helper</h1>
-                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This application allows the user to check the the dropzone in Erda, and gauge the wind conditions. </p>
-              </div>
-            </div>
-              project 2 start
-            <div class="md:flex md:flex-row md:justify-around">
-              <div class="md:w-1/2">
-                <img class="object-contain h-full w-3/4 float-right" src="img/project2/project_2_nestedcursor.png">
-              </div>
-              <div class="md:w-1/2">
-                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Live Music Database</h1>
-                Add a proficiency thing maybe
-                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This database is meant to help schedule events for live music, providing functionality for tickets, artists, payments, and more. </p>
-              </div>
-            </div>
-            project 3 start
-            <div class="md:flex md:flex-row md:justify-around">
-              <div class="md:w-1/2">
-                <img class="object-cover h-full w-3/4 float-right" src="img/project3/project_3_game.png">
-              </div>
-              <div class="md:w-1/2">
-                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Mycelium Mash</h1>
-                Add a proficiency thing maybe
-                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This is a game I created using Phaser, the HTML5 game engine. I created the music, and put the game together, my sister drew the sprites </p>
-              </div>
-            </div>
-        </div>
-      </section> -->
-
-      <section id="contact" class="font-mono text-xl pt-20 mt-20 ">
+      <section id="contact" class="font-mono text-xl pt-10 mt-10 ">
         <div class="conatainer mx-auto text-center sm:mt-52 mt-20">
           <h1 class="text-3xl sm:text-5xl sm:mb-8">Contact Me</h1>
 
@@ -156,23 +122,26 @@
 
       <footer class="bg-slate-600 text-white">
         <div class="conatainer mx-auto sm:mt-52 mt-20">
-          <div class="md:flex md:flex-row md:justify-between md:ml-52 md:mr-52 ">
+          <div class="md:flex md:flex-row md:justify-evenly md:ml-52 md:mr-52 ">
             <div class="md:w-1/2">
-            <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-6">Ian Tai Ahn</h1>
-            <p class="sm:text-xl text-lg mb-5 mt-5"> Future full-stack software developer. An eternal student. Always Learn.
+            <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6">Ian Tai Ahn</h1>
+            <p class="sm:text-xl text-md mb-5 mt-5"> Future full-stack software developer. An eternal student. Always Learn.
             </p>
-            <div class="border-white border"></div>
+            <!-- <div class=""></div> -->
 
             </div>
             <div class="md:w-1/2 ">
-              <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-6 text-right">Social</h1>
+              <div>
+              <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6 text-right">Social</h1>
               <!-- Add a proficiency thing maybe -->
-              <p class="sm:text-xl text-lg mb-5 mt-5 text-right">Java HTML CSS JavaScript SQL Git PHP</p>
-              <div class="border-white border"></div>
+              <p class="sm:text-xl text-md mb-5 mt-5 text-right">LinkedIn E-mail GitHub</p>
+              <!-- <div class=""></div> -->
+              </div>
             </div>
           </div>
-          <!-- <p class="text-center">--------------------------------------------------------------------------------------------------------------------------</p> -->
-          <p class="text-center text-sm"> @copyright 2022 Created by Ian Tai Ahn </p>
+            <div class="border-white border-t">
+              <p class="text-center text-sm pb-4 pt-4"> @copyright 2022 Created by Ian Tai Ahn </p>
+            </div>
         </div>
       </footer>
 
