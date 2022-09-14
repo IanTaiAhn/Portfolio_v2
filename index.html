@@ -8,14 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</head>
+    <script src="https://kit.fontawesome.com/071390ed0e.js" crossorigin="anonymous"></script></head>
 <body class="bg-slate-400 scroll-smooth " >
     <!-- <header> -->
     <nav class = "text-white bg-slate-600 pt-6 pb-6 font-mono font-bold text-xl z-[3] shadow shadow-black md:flex md:items-center md:justify-between sticky top-0">
         <div class = "flex justify-between items-center z-[2]">
             <h1 class="text-3xl ml-8 ">Ian Tai Ahn</h1>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                <ion-icon id="ham" name="menu" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
@@ -27,24 +27,29 @@
                     <a href="#about" name="exitNav" onclick="exitNav(this)">About</a>
                 </li>
                 <li class="mx-2 sm:mx-8 hover:text-teal-400">
-                    <a href="#projects">Projects</a>
+                  <a href="#projects" name="exitNav" onclick="exitNav(this)">Projects</a>
                 </li>
                 <li class="mx-2 pr-6 sm:mx-8 hover:text-teal-400">
-                    <a href="#contact">Contact</a>
+                  <a href="#contact" name="exitNav" onclick="exitNav(this)">Contact</a>
                 </li>
             </ul>
     </nav>
     <!-- </header> -->
 
       <section class="font-mono text-xl mb-32 h-screen">
-        <div class="container mx-auto text-center sm:mt-52 mt-10">
-            <div>
+        <div class="container mx-auto text-center sm:mt-40 mt-10">
+            <div class="mb-20">
             <h1 class="text-3xl sm:text-5xl px-2 sm:mb-5">Hi, I'm Ian Tai Ahn</h1>
             <p class="text-center pt-5 sm:text-xl text-lg px-2 mb-10"> Full-time worker, full-time student, big aspirations, and knows how to take care of themselves.</p>
             <button class="float-center rounded-full bg-slate-300 text-sm md:text-2xl p-2 mt-4 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600"><a href="#projects">Projects</a></button>
-            <!-- <div class=" object-cover">
-              <img src="img/me.JPEG" class="object-contain h-48 w-96">
-            </div> -->
+            </div>
+            <div class="conatainer mx-auto text-center sm:mt-10 mt-10">
+              <h1 class="text-3xl sm:text-5xl sm:mb-8 mb-4">My Links</h1>
+                <div class="flex flex-row justify-center sm:gap-x-12 gap-x-4">
+                  <a href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+                  <a href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+                  <a href="mailto:iantaiahn@yahoo.com"><i class="fa-regular fa-envelope fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+                </div>
             </div>
         </div>
       </section>
@@ -56,14 +61,13 @@
               <div class="md:flex md:flex-row md:justify-around">
                 <div class="md:w-1/2">
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8">More on me</h1>
-                <p class="sm:text-xl text-lg mb-5 mt-5 px-2"> I'm on a journey to become a full-stack developer. I'm fascinated by the many branches of programming, 
-                  and I want to explore them all. I am a lover of life, and I always seek out excitement.
+                <p class="sm:text-xl text-lg mb-5 mt-5 px-2 text-left md:text-center"> I'm on a journey to become a full-stack developer. I'm fascinated by the many branches of programming, 
+                  and I want to explore them all. I am a lover of life, and I always seek out a challenge.
                 </p>
                 </div>
                 <div class="md:w-1/2">
                   <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8">My Skills</h1>
-                  <!-- Add a proficiency thing maybe -->
-                  <p class="sm:text-xl text-lg mb-5 mt-5">Java HTML CSS JavaScript SQL Git PHP</p>
+                  <p class="sm:text-xl text-lg mb-5 mt-5">Java HTML CSS JavaScript SQL Git Python PHP</p>
                 </div>
               </div>
         </div>
@@ -80,7 +84,7 @@
               </div>
               <div class="md:w-1/2 pl-10 pr-10">
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left mt-4">Skydiving Helper</h1>
-                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This application allows the user to check the the dropzone in Erda, and gauge the wind conditions. </p>
+                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left text-left">A multi-functional app built in Java, using Spring, and Gradle. This app scrapes the HTML on a weather page for data on wind conditions, and inserts it into a remote database. The wind conditions data can be accessed by asking Alexa the proper intent name.</p>
                 <button class="float-center md:float-left mb-4 rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600"><a href="https://github.com/IanTaiAhn/Alexa_App">GitHub</a></button>
               </div>
             </div>
@@ -91,8 +95,7 @@
               </div>
               <div class="md:w-1/2 pl-12 pr-10">
                 <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Live Music Database</h1>
-                <!-- Add a proficiency thing maybe -->
-                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This database is meant to help schedule events for live music, providing functionality for tickets, artists, payments, and more. </p>
+                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left text-left">This database was designed to showcase MS SQL Server programming, and has extensive usage of triggers, user defined functions, and stored procedures. It was designed to help organize events that utilize live music.</p>
                 <button class="float-center md:float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600"><a href="https://github.com/IanTaiAhn/LiveMusicDB">GitHub</a></button>
 
               </div>
@@ -100,26 +103,25 @@
             <!-- project 3 start -->
             <div class="md:flex md:flex-row md:justify-around mt-2 pt-4 pb-4 border-2 mt-4 mb-4">
               <div class="md:w-1/2 pr-12">
-                <img class="object-cover h-full w-3/4 float-right" src="img/project3/project_3_game.png">
+                <img class="object-cover h-full w-3/4 float-right" src="img/project3/project_3_action.png">
               </div>
               <div class="md:w-1/2 pl-12 pr-10">
-                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left">Mycelium Mash</h1>
-                <!-- Add a proficiency thing maybe -->
-                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left ">This is a game I created using Phaser, the HTML5 game engine. I created the music, and put the game together, my sister drew the sprites </p>
-                <!-- <div class="flex flex-row  sm:justfiy-start sm:gap-x-6 justify-around"> -->
-                <button class="float-center md:float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600"><a href="https://iantaiahn.github.io/htdocs/phaser/">GitHub</a></button>
-                <!-- <button class="float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600"><a href="https://iantaiahn.github.io/htdocs/phaser/">Live Website</a></button> -->
-                <!-- </div> -->
+                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8 sm:text-left ">Mycelium Mash</h1>
+                <p class="sm:text-xl text-lg mb-5 mt-5 sm:text-left text-left">This is a game I created using Phaser, the HTML5 game engine. This is a personal project of mine to help me better my understanding of JavaScript. I composed the song, and created the sprite sheets for the game. My sister drew the sprites, and helped with the level design. </p>
+                <button class="float-center md:float-left rounded-full bg-slate-300 text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600"><a href="https://github.com/IanTaiAhn/htdocs">GitHub</a></button>
               </div>
             </div>
         </div>
       </section>
 
       <section id="contact" class="font-mono text-xl pt-10 mt-10 ">
-        <div class="conatainer mx-auto text-center sm:mt-52 mt-20">
-          <h1 class="text-3xl sm:text-5xl sm:mb-8">My Links</h1>
-
-          <!-- <p class="text-center sm:text-xl text-lg mb-5 mt-5">Backend, frontend, and SQL projects I've done.</p>s -->
+        <div class="conatainer mx-auto text-center sm:mt-10 mt-10">
+          <h1 class="text-3xl sm:text-5xl sm:mb-8 mb-4">My Links</h1>
+          <div class="flex flex-row justify-center sm:gap-x-12 gap-x-4">
+            <a href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+            <a href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+            <a href="mailto:iantaiahn@yahoo.com"><i class="fa-regular fa-envelope fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+          </div>
         </div>
       </section>
 
@@ -128,17 +130,17 @@
           <div class="md:flex md:flex-row md:justify-evenly md:ml-52 md:mr-52 ">
             <div class="md:w-1/2">
             <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6">Ian Tai Ahn</h1>
-            <p class="sm:text-xl text-md mb-5 mt-5"> Future full-stack software developer. An eternal student. Always Learn.
+            <p class="sm:text-xl text-md mb-4 mt-2"> Future full-stack software developer. An eternal student. Always Learn.
             </p>
-            <!-- <div class=""></div> -->
-
             </div>
             <div class="md:w-1/2 ">
               <div>
-              <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6 text-right">Social</h1>
-              <!-- Add a proficiency thing maybe -->
-              <p class="sm:text-xl text-md mb-5 mt-5 text-right">LinkedIn E-mail GitHub</p>
-              <!-- <div class=""></div> -->
+              <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6 text-right mb-4">Social</h1>
+              <div class="flex flex-row justify-end sm:gap-x-12 gap-x-4 mb-2">
+                <a href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+                <a href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+                <a href="mailto:iantaiahn@yahoo.com"><i class="fa-regular fa-envelope fa-2x hover:text-teal-400 hover:cursor-pointer"></i></a>
+              </div>
               </div>
             </div>
           </div>
@@ -151,53 +153,14 @@
       <script>
         function Menu(e){
           let list = document.querySelector('ul');
-          // let sec1 = document.querySelector('section');
-          // let body = document.querySelector('body');
-          // let nav = document.querySelector('nav');
           e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-90'), list.classList.add('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'));
         }
         function exitNav(e) {
           let list = document.querySelector('ul');
+          let closeNav = document.getElementById("ham").click();
           e.name === 'menu' ? (e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'),list.classList.remove('bg-slate-500'));
         }
       </script>
-
-    <!-- <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-        <div class="flex justify-between items-center ">
-          <span class="text-2xl font-[Poppins] cursor-pointer">
-            <img class="h-10 inline"
-              src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
-            tailwind
-          </span>
-    
-          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-          </span>
-        </div>
-    
-        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
-          </li>
-          <li class="mx-4 my-6 md:my-0">
-            <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
-          </li>
-    
-          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
-            Get started
-          </button>
-    <h2 class=""></h2>
-        </ul>
-      </nav> -->
 
 </body>
 </html>
