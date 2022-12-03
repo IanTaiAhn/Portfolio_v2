@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_v2",
+  "version": "1.0.0",
+  "description": "I'm creating a new portfolio because my first one was stinky. I'm liking it a lot more already! I want to make this a very modern looking website,\r and something that I'll be able to advertise for other people than myself.\r I think eventually I want to purchase a domain, and try github pages option of hosting the website at a custom domain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanTaiAhn/Portfolio_v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IanTaiAhn/Portfolio_v2/issues"
+  },
+  "homepage": "https://github.com/IanTaiAhn/Portfolio_v2#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
