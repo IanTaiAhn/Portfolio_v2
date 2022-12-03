@@ -20,7 +20,7 @@
             <!-- Logo -->
             <div class="pt-2">
               <!-- <img src="img/logo.svg" alt="" /> Perhaps I'll find a logo, or make one --> 
-              <h1 class="font-bold text-2xl text-white p-2 rounded-full">
+              <h1 class="font-bold sm:text-4xl text-2xl text-white p-2 rounded-full">
                 <a href="/" class="hover:text-teal-400 transition-all delay-75 group relative">Ian Tai Ahn</a>
               </h1>
             </div>
@@ -49,18 +49,18 @@
             <div class="relative m-2 md:hidden" >
               <i class="fa-solid fa-bars fa-2x cursor-pointer" id="menu"></i>
               <!-- Actual menu -->
-              <div class="container flex justify-center fixed top-20 -left-full w-0 h-screen transition-all ease-in duration-300 bg-pink-400 z-10">
-                <div class="flex flex-col pt-4 space-y-5 text-2xl text-white">
-                  <a href="#home" class="hover:text-slate-300 group relative">
+              <div class="container flex justify-center fixed top-20 -left-full w-0 h-screen transition-all ease-in duration-300 bg-slate-400 z-10" id="closeHam">
+                <div class="flex flex-col mt-16 space-y-10 text-2xl text-white p-2 ">
+                  <a href="#home" class="hover:text-slate-300 group relative close">
                     Home
                   </a>
-                  <a href="#projects" class="hover:text-slate-300 group relative">
+                  <a href="#projects" class="hover:text-slate-300 group relative close">
                     Projects
                   </a>
-                  <a href="#about" class="hover:text-slate-300 group relative">
+                  <a href="#about" class="hover:text-slate-300 group relative close">
                     About
                   </a>
-                  <a href="#contact" class="hover:text-slate-300 group relative">
+                  <a href="#contact" class="hover:text-slate-300 group relative close">
                     Contact
                   </a>
                 </div>
@@ -91,20 +91,28 @@
 
       <section id="about" class="font-mono text-xl pt-20 pb-10 ">
         <div class="container mx-auto text-center sm:mt-20 mt-10">
-          <h1 class="text-3xl sm:text-5xl sm:mb-8">About Me</h1>
-          <p class="text-center sm:text-xl text-lg mb-5 mt-5 px-2">Who I am, what I've done, and where I'm headed.</p>
-              <div class="md:flex md:flex-row md:justify-around">
-                <div class="md:w-1/2">
-                <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8">More on me</h1>
-                <p class="sm:text-xl text-lg mb-5 mt-5 px-2 text-left md:text-center pl-2 pr-2"> I'm on a journey to become a full-stack developer. I'm fascinated by the many branches of programming, 
-                  and I want to explore them all. I am a lover of life, and I always seek out a challenge.
-                </p>
-                </div>
-                <div class="md:w-1/2">
-                  <h1 class="text-1xl sm:text-3xl mt-10 sm:mb-8">My Skills</h1>
-                  <p class="sm:text-xl text-lg mb-5 mt-5 pl-2 pr-2">Java HTML CSS JavaScript SQL Git Python PHP</p>
-                </div>
-              </div>
+          <div class="flex flex-col space-y-8 p-2 mb-8">
+            <h1 class="text-3xl sm:text-5xl">About Me</h1>
+            <p class="text-center sm:text-xl text-lg ">
+              Who I am, what I've done, and where I'm headed.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex md:flex-row md:justify-around p-2">
+            <div class="md:w-1/2 flex flex-col mt-2 text-left">
+              <h1 class="text-xl sm:text-3xl p-2">Techstack</h1>
+              <p class="sm:text-xl text-lg p-2">Proficient: Java JavaScript HTML CSS Python MS SQL Server Git Node</p>
+              <p class="sm:text-xl text-lg p-2">Frameworks: React Angular Spring Flask Tailwind</p>
+              <p class="sm:text-xl text-lg p-2">Experience: TypeScript C# PHP MongoDB MySQL PostgreSQL SQLAlchemy JavaFX Phaser Unity</p>
+              <p class="sm:text-xl text-lg p-2">Other: Gradle Maven Postman Eclipse IntelliJ Visual Studio Code</p>
+            </div>
+            <div class="flex flex-col items-center md:w-1/2 mt-2 mb-4">
+              <h1 class="self-start text-1xl sm:text-3xl p-2">More on me</h1>
+              <p class="p-2 self-start text-lg text-left max-w-2xl sm:text-xl">
+                I'm on a journey to become a full-stack developer. I'm fascinated by the many branches of programming, 
+                and I want to explore them all. I am a lover of life, and I always seek out a challenge.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -179,8 +187,12 @@
         </div>
       </section> -->
 
+      <div class="flex flex-row justify-center items-center mt-16 motion-safe:animate-bounce">
+        <a class="w-auto rounded-full bg-slate-300 text-sm md:text-2xl p-2 mt-4 transition-all delay-75 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600" href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+
       <footer class="bg-gradient-to-b from-slate-300 to-slate-600 text-white" id="contact">
-        <div class="conatainer mx-auto sm:mt-52 mt-20 pt-10">
+        <div class="conatainer mx-auto sm:mt-10 mt-10 pt-10">
           <div class="md:flex md:flex-row md:justify-evenly md:ml-52 md:mr-52 ">
             <div class="md:w-1/2 pl-2">
             <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6">Ian Tai Ahn</h1>
