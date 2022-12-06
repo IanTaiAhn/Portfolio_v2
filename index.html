@@ -13,7 +13,8 @@
   </head>
 <body class="bg-slate-300 scroll-smooth font-mono">
     <!-- Navbar -->
-    <section class="pb-4 bg-gradient-to-b from-slate-600 to-slate-300" id="home">
+    <div id="home"></div>
+    <section class="sticky top-0 pb-4 bg-gradient-to-b from-slate-600 to-slate-300 z-10" >
       <nav class="relative container mx-auto p-2">
           <!-- Flex container -->
           <div class="flex items-center justify-between">
@@ -26,7 +27,7 @@
             </div>
             <!-- Menu Items -->
             <div id="menuItems" class="hidden space-x-6 text-white text-lg md:flex">
-              <a href="#home" class="hover:text-slate-300 group relative">
+              <a href="/" class="hover:text-slate-300 group relative">
                 Home
                 <span class="bg-teal-300 absolute left-0 -bottom-1 w-0 h-1 transition-all group-hover:w-full"></span>
               </a>
@@ -54,11 +55,11 @@
                   <a href="#home" class="hover:text-slate-300 group relative close">
                     Home
                   </a>
-                  <a href="#projects" class="hover:text-slate-300 group relative close">
-                    Projects
-                  </a>
                   <a href="#about" class="hover:text-slate-300 group relative close">
                     About
+                  </a>
+                  <a href="#projects" class="hover:text-slate-300 group relative close">
+                    Projects
                   </a>
                   <a href="#contact" class="hover:text-slate-300 group relative close">
                     Contact
@@ -79,7 +80,7 @@
               <p class="p-2 text-left text-lg sm:text-xl max-w-6xl"> Full-time worker, full-time student, big aspirations, and knows how to take care of themselves</p>
               <a class="w-auto rounded-full bg-slate-300 text-sm md:text-2xl p-2 mt-8 transition-all delay-75 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600" href="#projects">Projects</a>
             </div>
-            <div class="mx-auto text-center mt-10 flex flex-col space-y-10">
+            <div class="relative mx-auto text-center mt-10 flex flex-col space-y-10">
               <h1 class=" relative text-3xl sm:text-5xl">
                 My Links
                 <div class="flex flex-row justify-center mt-3">
@@ -87,10 +88,10 @@
                 </div>
               </h1>
                 <div class="flex flex-row justify-center sm:gap-x-12 gap-x-4">
-                  <a target="_blank" href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
-                  <a target="_blank" href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
-                  <a href="mailto:iantaiahn@yahoo.com"><i class="fa-regular fa-envelope fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
-                </div>
+                    <a target="_blank" href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
+                    <a href="mailto:iantaiahn@yahoo.com"><i class="fa-regular fa-envelope fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
+                  </div>
             </div>
         </div>
       </section>
@@ -117,7 +118,7 @@
             </div>
             <div class="flex flex-col items-center md:w-1/2 mt-2 mb-4">
               <h1 class="font-semibold self-start text-1xl sm:text-3xl p-2">More on me</h1>
-              <p class="p-2 self-start text-lg text-left max-w-2xl sm:text-xl">
+              <p class="p-2 self-start leading-loose text-lg text-left max-w-2xl sm:text-xl">
                 I'm on a journey to become a full-stack developer. I'm fascinated by the many branches of programming, 
                 and I want to explore them all. I am a lover of life, and I always seek out a challenge.
               </p>
@@ -141,7 +142,7 @@
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
                 <h1 class="font-semibold text-2xl text-left sm:text-3xl">Skydiving Alexa App</h1>
-                <p class="text-left text-lg sm:text-xl">
+                <p class="text-left text-lg leading-loose sm:text-xl">
                   An application that assists skydivers by retreiving weather conditions, specifically wind speed and direction.
                   This app webscraped this data from a weather webpage, and put the desired information into a database, where it would be later retrieved by Alexa voice commands.
                   The webscraping, data insertion, data deletion, and data retrieval are all executable via Alexa voice commands.
@@ -149,70 +150,95 @@
                 <p class="text-left text-lg sm:text-xl">
                   Techstack: Java, Spring, Gradle, Heroku, Amazon Developer Alexa, PostgreSQL
                 </p>
-                <a target="_blank" href="https://github.com/IanTaiAhn/Alexa_App" class="rounded-full text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
-                  <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
-                </a>
+                <div class="flex flex-row space-x-4">
+                  <a target="_blank" href="https://github.com/IanTaiAhn/Alexa_App" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75">
+                    <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
+                  </a>
+                  <a target="_blank" href="https://www.youtube.com/watch?v=gcbA1gPag6A" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <!-- P2 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
                 <h1 class="font-semibold text-2xl text-left sm:text-3xl">Weber Games</h1>
-                <p class="text-left text-lg sm:text-xl">
+                <p class="text-left text-lg leading-loose sm:text-xl">
                   A full stack application designed to host casual web games for anyone to play. As long as they have a connection to the internet they will have access to the games.
                 </p>
                 <p class="text-left text-lg sm:text-xl">
                   Techstack: Python, JavaScript, HTML, CSS, React, Flask, SQLAlchemy, Tailwind, Bootstrap
                 </p>
-                <a target="_blank" href="https://iantaiahn.github.io/weber_games/" class="rounded-full text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
-                  <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
-                </a>
+                <div class="flex flex-row space-x-4">
+                  <a target="_blank" href="https://github.com/IanTaiAhn/weber_games" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
+                    <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
+                  </a>
+                  <a target="_blank" href="https://iantaiahn.github.io/weber_games/" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <!-- P3 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
                 <h1 class="font-semibold text-2xl text-left sm:text-3xl">Live Music Database</h1>
-                <p class="text-left text-lg sm:text-xl">
+                <p class="text-left text-lg leading-loose sm:text-xl">
                   This database was designed to help organize hotel room rentals, and live music events that would be hosted at their venues.
                   Extensive usage of triggers, user defined functions, and stored procedures are demonstrated throughout this SQL database.
                 </p>
                 <p class="text-left text-lg sm:text-xl">
                   Techstack: Microsoft SQL Server
                 </p>
-                <a target="_blank" href="https://github.com/IanTaiAhn/LiveMusicDB" class="rounded-full text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
-                  <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
-                </a>
+                <div class="flex flex-row space-x-4">
+                  <a target="_blank" href="https://github.com/IanTaiAhn/LiveMusicDB" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
+                    <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
+                  </a>
+                  <a target="_blank" href="https://www.youtube.com/watch?v=hfFtJsZ-BJc&t=14s" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <!-- P4 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
                 <h1 class="font-semibold text-2xl text-left sm:text-3xl">Burning Sissy Valley</h1>
-                <p class="text-left text-lg sm:text-xl">
+                <p class="text-left text-lg leading-loose sm:text-xl">
                   A bipoc lgbtq+ community website I built for the Burning Sissy Valley (BSV). They are local to Utah, and will be seeking non-profit organziation status very soon, as they are continually growing.
                 </p>
                 <p class="text-left text-lg sm:text-xl">
                   Techstack: HTML, CSS, JavaScript, Tailwind
                 </p>
-                <a target="_blank" href="https://github.com/IanTaiAhn/htdocs" class="rounded-full text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
-                  <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
-                </a>
+                <div class="flex flex-row space-x-4">
+                  <a target="_blank" href="https://github.com/IanTaiAhn/htdocs" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
+                    <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
+                  </a>
+                  <a target="_blank" href="https://iantaiahn.github.io/bsv3/" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <!-- P5 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
                 <h1 class="font-semibold text-2xl text-left sm:text-3xl">Mycelium Mash</h1>
-                <p class="text-left text-lg sm:text-xl">
+                <p class="text-left text-lg leading-loose sm:text-xl">
                   A fun casual action game following a young mushgroom girl as she tries to protect her homeland from the invading purple monkies.
                 </p>
                 <p class="text-left text-lg sm:text-xl">
                   Techstack: HTML, CSS, JavaScript, Phaser
                 </p>
-                <a target="_blank" href="https://github.com/IanTaiAhn/htdocs" class="rounded-full text-sm p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
-                  <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
-                </a>
+                <div class="flex flex-row space-x-4">
+                  <a target="_blank" href="https://github.com/IanTaiAhn/htdocs" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75 float-left">
+                    <i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400"></i>
+                  </a>
+                  <a target="_blank" href="https://iantaiahn.github.io/htdocs/phaser/" class="rounded-full text-xs p-2 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600 bg-slate-300 transition-all delay-75">
+                    <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
+                  </a>
+                </div>
               </div>
             </div>
             <!-- Project end -->
