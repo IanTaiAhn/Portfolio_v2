@@ -72,14 +72,20 @@
       </section>
       
       <section class="font-mono text-xl h-screen">
-        <div class="container mx-auto text-center sm:mt-40 mt-10 flex flex-col justify-center align-middle">
+        <div class="container mx-auto text-center xl:mt-20 lg:mt-28 sm:mt-16 mt-10 flex flex-col justify-center align-middle">
             <div class="flex flex-col space-y-10 justify-center items-center">
-              <h1 class="text-3xl sm:text-5xl">Hi, I'm <span class="whitespace-nowrap">Ian Tai Ahn</span></h1>
-              <p class="p-2 text-left text-lg sm:text-xl max-w-6xl"> Full-time worker, full-time student, big aspirations, and knows how to take care of themselves.</p>
-              <a class="w-auto rounded-full bg-slate-300 text-sm md:text-2xl p-2 mt-4 transition-all delay-75 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600" href="#projects">Projects</a>
+              <h1 class="font-extrabold text-3xl sm:text-5xl">Hi, I'm <span class="whitespace-nowrap">Ian Tai Ahn</span>
+              </h1>
+              <p class="p-2 text-left text-lg sm:text-xl max-w-6xl"> Full-time worker, full-time student, big aspirations, and knows how to take care of themselves</p>
+              <a class="w-auto rounded-full bg-slate-300 text-sm md:text-2xl p-2 mt-8 transition-all delay-75 shadow shadow-gray-900 hover:text-teal-400 hover:bg-gray-600" href="#projects">Projects</a>
             </div>
             <div class="mx-auto text-center mt-10 flex flex-col space-y-10">
-              <h1 class="text-3xl sm:text-5xl">My Links</h1>
+              <h1 class=" relative text-3xl sm:text-5xl">
+                My Links
+                <div class="flex flex-row justify-center mt-3">
+                  <span class="w-6 rounded-full border-2 border-teal-400 "></span>
+                </div>
+              </h1>
                 <div class="flex flex-row justify-center sm:gap-x-12 gap-x-4">
                   <a target="_blank" href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
                   <a target="_blank" href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
@@ -92,21 +98,25 @@
       <section id="about" class="font-mono text-xl pt-20 pb-10 ">
         <div class="container mx-auto text-center sm:mt-20 mt-10">
           <div class="flex flex-col space-y-8 p-2 mb-8">
-            <h1 class="text-3xl sm:text-5xl">About Me</h1>
+            <h1 class="font-extrabold relative text-3xl sm:text-5xl">About Me
+              <div class="flex flex-row justify-center mt-3">
+                <span class="w-6 rounded-full border-2 border-teal-400 "></span>
+              </div>
+            </h1>
             <p class="text-center sm:text-xl text-lg ">
-              Who I am, what I've done, and where I'm headed.
+              Who I am, what I've done, and where I'm headed
             </p>
           </div>
           <div class="flex flex-col md:flex md:flex-row md:justify-around p-2">
             <div class="md:w-1/2 flex flex-col mt-2 text-left">
-              <h1 class="text-xl sm:text-3xl p-2">Techstack</h1>
+              <h1 class="font-semibold text-xl sm:text-3xl p-2">Techstack</h1>
               <p class="sm:text-xl text-lg p-2">Proficient: Java JavaScript HTML CSS Python MS SQL Server Git Node</p>
               <p class="sm:text-xl text-lg p-2">Frameworks: React Angular Spring Flask Tailwind</p>
               <p class="sm:text-xl text-lg p-2">Experience: TypeScript C# PHP MongoDB MySQL PostgreSQL SQLAlchemy JavaFX Phaser Unity</p>
               <p class="sm:text-xl text-lg p-2">Other: Gradle Maven Postman Eclipse IntelliJ Visual Studio Code</p>
             </div>
             <div class="flex flex-col items-center md:w-1/2 mt-2 mb-4">
-              <h1 class="self-start text-1xl sm:text-3xl p-2">More on me</h1>
+              <h1 class="font-semibold self-start text-1xl sm:text-3xl p-2">More on me</h1>
               <p class="p-2 self-start text-lg text-left max-w-2xl sm:text-xl">
                 I'm on a journey to become a full-stack developer. I'm fascinated by the many branches of programming, 
                 and I want to explore them all. I am a lover of life, and I always seek out a challenge.
@@ -118,15 +128,19 @@
 
       <section id="projects" class="font-mono text-xl pt-10">
         <div class="container mx-auto text-center sm:mt-20 mt-10">
-          <h1 class="text-3xl sm:text-5xl sm:mb-8">Projects</h1>
-          <p class="text-center sm:text-xl text-lg mb-16 mt-5 p-2">
-            Backend, frontend, and SQL projects I've done.
+          <h1 class="font-semibold relative text-3xl sm:text-5xl sm:mb-8">Projects
+            <div class="flex flex-row justify-center mt-4">
+              <span class="w-6 rounded-full border-2 border-teal-400 "></span>
+            </div>
+          </h1>
+          <p class="text-center sm:text-xl text-lg mb-16 mt-3 p-2">
+            My Backend, frontend, and SQL projects
           </p>
           <div class="flex flex-col justify-center space-y-14">
             <!-- P1 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
-                <h1 class="text-2xl text-left sm:text-3xl">Skydiving Alexa App</h1>
+                <h1 class="font-semibold text-2xl text-left sm:text-3xl">Skydiving Alexa App</h1>
                 <p class="text-left text-lg sm:text-xl">
                   An application that assists skydivers by retreiving weather conditions, specifically wind speed and direction.
                   This app webscraped this data from a weather webpage, and put the desired information into a database, where it would be later retrieved by Alexa voice commands.
@@ -143,7 +157,7 @@
             <!-- P2 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
-                <h1 class="text-2xl text-left sm:text-3xl">Weber Games</h1>
+                <h1 class="font-semibold text-2xl text-left sm:text-3xl">Weber Games</h1>
                 <p class="text-left text-lg sm:text-xl">
                   A full stack application designed to host casual web games for anyone to play. As long as they have a connection to the internet they will have access to the games.
                 </p>
@@ -158,7 +172,7 @@
             <!-- P3 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
-                <h1 class="text-2xl text-left sm:text-3xl">Live Music Database</h1>
+                <h1 class="font-semibold text-2xl text-left sm:text-3xl">Live Music Database</h1>
                 <p class="text-left text-lg sm:text-xl">
                   This database was designed to help organize hotel room rentals, and live music events that would be hosted at their venues.
                   Extensive usage of triggers, user defined functions, and stored procedures are demonstrated throughout this SQL database.
@@ -174,7 +188,7 @@
             <!-- P4 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
-                <h1 class="text-2xl text-left sm:text-3xl">Burning Sissy Valley</h1>
+                <h1 class="font-semibold text-2xl text-left sm:text-3xl">Burning Sissy Valley</h1>
                 <p class="text-left text-lg sm:text-xl">
                   A bipoc lgbtq+ community website I built for the Burning Sissy Valley (BSV). They are local to Utah, and will be seeking non-profit organziation status very soon, as they are continually growing.
                 </p>
@@ -189,7 +203,7 @@
             <!-- P5 -->
             <div class="flex flex-col justify-center items-center p-2">
               <div class="p-2 space-y-5 max-w-5xl">
-                <h1 class="text-2xl text-left sm:text-3xl">Mycelium Mash</h1>
+                <h1 class="font-semibold text-2xl text-left sm:text-3xl">Mycelium Mash</h1>
                 <p class="text-left text-lg sm:text-xl">
                   A fun casual action game following a young mushgroom girl as she tries to protect her homeland from the invading purple monkies.
                 </p>
@@ -226,7 +240,7 @@
         <div class="container mx-auto sm:mt-10 mt-10 pt-10">
           <div class="md:flex md:flex-row md:justify-evenly">
             <div class="md:w-1/2 p-2">
-              <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6">Ian Tai Ahn</h1>
+              <h1 class="font-semibold text-xl sm:text-3xl mt-10 sm:mb-6">Ian Tai Ahn</h1>
               <div class="flex flex-col md:flex-row md:space-x-4">
                 <p class="text-md sm:text-xl">
                   Software Engineer
@@ -238,7 +252,7 @@
             </div>
             <div class="md:w-1/2 p-2">
               <div>
-                <h1 class="text-xl sm:text-3xl mt-10 sm:mb-6 text-right mb-4">Contact</h1>
+                <h1 class="font-semibold text-xl sm:text-3xl mt-10 sm:mb-6 text-right mb-4">Contact</h1>
                 <div class="flex flex-row justify-end sm:gap-x-12 gap-x-4 mb-2">
                   <a target="_blank" href="https://github.com/IanTaiAhn"><i class="fa-brands fa-github fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
                   <a target="_blank" href="https://www.linkedin.com/in/ian-tai-ahn-429366228/"><i class="fa-brands fa-linkedin fa-2x transition-all delay-75 hover:text-teal-400 hover:cursor-pointer"></i></a>
